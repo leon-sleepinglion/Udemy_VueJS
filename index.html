@@ -13,7 +13,7 @@
             <h1 class="text-center">YOU</h1>
             <div class="healthbar">
                 <div class="healthbar text-center" style="background-color: green; margin: 0; color: white;" :style="{width:playerHPBar}">
-                	{{playerHP}}
+                    {{playerHP}}
                 </div>
             </div>
         </div>
@@ -21,7 +21,7 @@
             <h1 class="text-center">MONSTER</h1>
             <div class="healthbar">
                 <div class="healthbar text-center" style="background-color: green; margin: 0; color: white;" :style="{width:monsterHPBar}">
-                	{{monsterHP}}
+                    {{monsterHP}}
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@
         <div class="small-12 columns">
             <ul>
                 <li v-for="log in logs">
-                	<div :class="{'player-turn':log.isPlayer, 'monster-turn':!log.isPlayer}">{{log.description}}</div>
+                    <div :class="{'player-turn':log.isPlayer, 'monster-turn':!log.isPlayer}">{{log.description}}</div>
                 </li>
             </ul>
         </div>
